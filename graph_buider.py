@@ -2,8 +2,7 @@ import matplotlib.pyplot as plt
 
 
 def graph_builder(days, nums, dish):
-    fig, ax = plt.subplots()
-    ax.set_title(f'График {dish}')
-    ax.grid()
-    ax.plot(days, nums)
+    plt.subplots()
+    plt.title(f'График {dish}')
+    plt.bar(days, nums, color='darkorange')
     plt.savefig('save.png')
